@@ -16,6 +16,18 @@ setText(newText)
 
     setText(downtext)
  }
+
+
+ const erasure = ()=>{
+
+// let erase = window.location.reload()
+let erase = ""
+setText(erase)
+
+return erase
+
+
+ }
  
  const handlOnchange = function(event){
 
@@ -27,7 +39,6 @@ setText(newText)
  
 const[text, setText] = useState("Enter text here")
 
-// const[color, setColor] = useState()
 
 
 
@@ -48,6 +59,11 @@ Convert to Upper-case
 
 </button>
 
+<button class="btn btn-primary mx-10" type="submit" onClick={erasure} >
+
+Erase all
+
+</button>
 
 <button class="btn btn-primary mx-2" type="submit" onClick={handleDownclick}>
 
@@ -55,11 +71,6 @@ Convert to Lower-case
 
 </button>
 
-
-{/* <div className="form-check form-switch">
-  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={dark}/>
-  <label className="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
-</div> */}
 
 </div>
 </div>
