@@ -1,13 +1,17 @@
 // import logo from './logo.svg';
 // import './App.css';
-// import About from './components/About';
+import About from './components/About'
 
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import React, {useState} from 'react'
 
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 function App() {
    
   const[mode, setMode] = useState('light')
@@ -46,18 +50,25 @@ const toggleMode = ()=>{
 
 <>
 
-
+<Router>
 <Navbar title = "Test-Mod" about = "Details " mode ={mode} toggleMode={toggleMode}/>  
 <Alert alert = {alert}> </Alert>
 
 <div className='container my-3' >
+         <Routes>
+          <Route path="/about"
+           element = {<About />} >
+          </Route>
+          </Routes>
+          <Routes>
+          <Route path="/" element = 
+{<Textform name = "Enter your text below" mode={mode}/>} >
+          </Route>
+          </Routes>
 
-
-<Textform name = "Enter your text below" mode={mode}/>
-
-{/* <About/> */}
+ 
 </div>
-
+</Router>
 </>
   );
 }
