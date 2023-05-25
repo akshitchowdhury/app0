@@ -67,25 +67,25 @@ const[text, setText] = useState("")
 
   </textarea>
 
-<button class="btn btn-primary mx-2 my-1" type="submit" onClick={handleUpclick}>
+<button className="btn btn-primary mx-2 my-1" type="submit" onClick={handleUpclick}>
 
 Convert to Upper-case
 
 </button>
 
-<button class="btn btn-primary mx-10 my-1" type="submit" onClick={erasure} >
+<button className="btn btn-primary mx-10 my-1" type="submit" onClick={erasure} >
 
 Erase all
 
 </button>
 
-<button class="btn btn-primary mx-2 my-1" type="submit" onClick={handleDownclick}>
+<button className="btn btn-primary mx-2 my-1" type="submit" onClick={handleDownclick}>
 
 Convert to Lower-case
 
 </button>
 
-<button class="btn btn-primary mx-2 my-1" type="submit" onClick={spacex}>
+<button className="btn btn-primary mx-2 my-1" type="submit" onClick={spacex}>
 
 Remove extra spaces
 
