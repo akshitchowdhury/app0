@@ -44,7 +44,7 @@ return erase
 
 
  
-const[text, setText] = useState("Enter text here")
+const[text, setText] = useState("")
 
 
 
@@ -100,7 +100,7 @@ Remove extra spaces
 Text analyser  
 </h2>
 <p>
-{text.length} number of characters typed and {text.split(" ").length} number of words typed
+{text.length} number of characters typed and {text.split(" ").filter((element)=>{return element.length!==0}).length} number of words typed
 </p>
 <p>
 {0.03* text.split(" ").length} number of words read per minute
