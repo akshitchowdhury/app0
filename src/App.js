@@ -57,7 +57,7 @@ const toggleMode = ()=>{
 <div className='container my-3' >
          <Routes>
           <Route path="/about"
-           element = {<About />} >
+           element = {<About mode={mode}/>} >
           </Route>
           </Routes>
           <Routes>
