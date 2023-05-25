@@ -12,7 +12,7 @@ export default function About(props) {
   //  })
     
 
-   const[btnText, setbtnText] = useState("Dark mode on")
+  //  const[btnText, setbtnText] = useState("Dark mode on")
       
 // let toggleStyle = function(){
 
